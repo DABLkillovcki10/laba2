@@ -66,23 +66,16 @@
             border: 1px solid black;
             width: 24%;
         }
-        #qw{
+        #qw {
             width: 40%;
             height: 10rem;
             display: grid;
-            grid-temlate-rows: 1fr 1.5fr 1fr;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 1.5fr 1fr;
+            border: 1px solid black;
         }
-        .row1{
-            display: grid;
-            grid-template-colums: 1fr 1fr 1fr 1fr;
-        }
-        .row2{
-            display: grid;
-            grid-template-colums: 1fr 2fr 1fr;
-        }
-        .row3{
-            display: grid;
-            grid-template-colums: 2fr 1fr 1fr;
+        #qw > div {
+            border: 1px solid black;
         }
     </style>
 </head>
@@ -133,22 +126,16 @@
             <p>Кстати, список был выше</p><br>
             <a href="auto.html">Ссылка на форму</a>
             <div id="qw">
-                <div class="row1">
-                    <div style = "background-color: red; border: solid 1px black;"></div>
-                    <div style = "background-color: gray; border: solid 1px black;"></div>
-                    <div style = "background-color: blueviolet; border: solid 1px black;"></div>
-                    <div style = "background-color: blue; border: solid 1px black;"></div>
-                </div>
-                <div class="row2">
-                    <div style = "background-color: yellow; border: solid 1px black;"></div>
-                    <div style = "background-color: green; border: solid 1px black;"></div>
-                    <div style = "background-color: cyan; border: solid 1px black;"></div>
-                </div>
-                <div class="row3">
-                    <div style = "background-color: purple; border: solid 1px black;"></div>
-                    <div style = "background-color: black; border: solid 1px black;"></div>
-                    <div style = "background-color: #fff; border: solid 1px black;"></div>
-                </div>
+                <div style="background: red;"></div>
+                <div style="background: gray;"></div>
+                <div style="background: blueviolet;"></div>
+                <div style="background: blue;"></div>
+                <div style="background: yellow;"></div>
+                <div style="background: green; grid-column: span 2;"></div>
+                <div style="background: cyan;"></div>
+                <div style="background: purple; grid-column: span 2;"></div>
+                <div style="background: black;"></div>
+                <div style="background: #fff;"></div>
             </div>
         </div>
     </main>
